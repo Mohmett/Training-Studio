@@ -471,6 +471,7 @@ header {
 
 
 @media screen and (max-width: 768px) {
+
     /* Hamburger positioning */
     .humburger {
         display: flex;
@@ -487,11 +488,17 @@ header {
     }
 
     /* Toggle icons based on a class on the hamburger itself */
-    .humburger.active .fa-bars { display: none; }
-    .humburger.active .fa-close { display: block; }
+    .humburger.active .fa-bars {
+        display: none;
+    }
+
+    .humburger.active .fa-close {
+        display: block;
+    }
 
     .navbar {
-        display: none; /* Hidden by default */
+        display: none;
+        /* Hidden by default */
         flex-direction: column;
         background-color: #e2e2e2;
         position: absolute;
@@ -500,7 +507,7 @@ header {
         width: 100%;
         padding: 20px 0;
         text-align: center;
-        border-top: 1px solid rgba(255,255,255,0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     /* When the menu is toggled open */
@@ -516,8 +523,9 @@ header {
     .nav-menu li {
         margin: 10px 0;
     }
-     .nav-menu li a{
-       color: black;
+
+    .nav-menu li a {
+        color: black;
     }
 
     .logo {
@@ -526,7 +534,10 @@ header {
     }
 
     /* Layout fixes for other sections */
-    .about-content, .classes-content, .trainers-content, .contact-us {
+    .about-content,
+    .classes-content,
+    .trainers-content,
+    .contact-us {
         grid-template-columns: 1fr;
     }
 
@@ -534,34 +545,38 @@ header {
         width: 100%;
         height: auto;
     }
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 30px;
-    max-width: 1000px;
-    gap: 20px;
-}
 
-.classes-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* justify-content: center; */
-    gap: 40px;
-    margin-top: 30px;
-}
-.right-content-item{
-    align-items: center;
-    text-align: center;
-}
-.right-content-item img {
-    width: 100%;}
-
-    .trainers-content{
-    display: grid;
-    grid-template-columns: 1fr;
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+        max-width: 1000px;
+        gap: 20px;
     }
 
-    .contact-us{
+    .classes-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* justify-content: center; */
+        gap: 40px;
+        margin-top: 30px;
+    }
+
+    .right-content-item {
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-content-item img {
+        width: 100%;
+    }
+
+    .trainers-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-us {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
@@ -572,8 +587,12 @@ header {
         height: auto;
     }
 
+    .schedule-content table {
+        width: 90%;
+        border-spacing: 5px;
+    }
+
     .footer-content {
         font-size: 12px;
     }
-
 }
